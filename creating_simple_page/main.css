@@ -1,0 +1,28 @@
+body {
+    margin-left: 25px;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.font-color-purple {
+    color: purple;
+}
+
+.font-color-black {
+    color: black;
+}
+
+.font-color-blue {
+    color: blue;
+}
