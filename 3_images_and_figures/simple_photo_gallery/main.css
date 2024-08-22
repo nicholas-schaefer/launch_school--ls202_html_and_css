@@ -1,0 +1,23 @@
+body, main, figure, figcaption, img {
+    margin: 0;
+    padding: 0;
+  }
+
+main {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 50px;
+    outline: 1px solid red;
+    background-color: yellow;
+    display: inline-block;
+    width: 20%
+}
+
+img {
+    width: 100%;
+    /* display: block; */
+
+    /* margin: 0 auto; */
+}

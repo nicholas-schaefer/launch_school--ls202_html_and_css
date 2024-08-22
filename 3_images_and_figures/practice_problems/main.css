@@ -1,0 +1,12 @@
+img {
+    height: 350px;
+    width: 400px;
+}
+
+figure {
+    background-color: yellow;
+    display: inline-block;
+    /* width: 100px; */
+    /* box-sizing: border-box;
+    width: 400px; */
+}
