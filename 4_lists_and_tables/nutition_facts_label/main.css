@@ -1,0 +1,116 @@
+body {
+    font-size: 16px;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    width: 350px;
+    /* background-color: lightblue; */
+    border: 3px solid black;
+    font-family: Helvetica, "Helvetica Black"
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2.8rem;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: yellow;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+th,td {
+    /* border: 1px solid; */
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    /* list-style-type: "*"; */
+
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+hr {
+    background-color: black;
+    border: 0;
+    margin-top: 4px;
+}
+
+hr:nth-of-type(odd) {
+    height: 10px;
+}
+
+hr:nth-of-type(even) {
+    height: 5px;
+}
+
+/* hr {
+    height: 6px;
+    background-color: black;
+    border: 0;
+} */
+
+[scope=col] {
+    font-size: .9rem;
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.percentage {
+    text-align: right;
+}
+
+.sub-ingredient {
+    padding-left: 20px;
+}
+
+tfoot td {
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+
+tfoot tr td ul {
+    /* background-color: red; */
+    list-style-type: "* ";
+    padding-left: 10px;
+    font-size: .75rem;
+}
+
+table:last-of-type{
+    font-size: .8rem;
+    text-align: left;
+}
+
+table:last-of-type tr {
+    border-bottom: 0px;
+}
+
+table:last-of-type th {
+    font-weight: normal;
+    border-bottom: 1px solid black;
+}
+
+.large-width{
+    width: 40%;
+}
+
+/* class="large-width" */

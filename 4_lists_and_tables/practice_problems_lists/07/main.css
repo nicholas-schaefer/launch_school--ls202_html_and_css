@@ -1,0 +1,30 @@
+html {
+    font-size: 20px;
+}
+
+nav ul {
+  background-color: yellow;
+  list-style-type: none;
+  padding-left: 10px;
+  width: 200px;
+}
+
+nav li {
+    color: blue;
+}
+
+nav a {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 2.5;
+    /* padding: 0 10px; */
+    text-decoration: none;
+    width: 100%;
+}
+
+nav li:hover,
+nav li:focus {
+   background-color: green;
+   color: yellow;
+   /* transition: background-color 0.5s; */
+}
