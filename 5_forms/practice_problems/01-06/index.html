@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>your page title goes here</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <dl>
+                <dt><label for="first_name">first name</label></dt>
+                <dd><input type="text" id="first_name" name="first_name" required></dd>
+
+                <dt><label for="last_name">last name</label></dt>
+                <dd><input type="text" id="last_name" name="last_name" required></dd>
+
+                <dt><label for="email">email</label></dt>
+                <dd>
+                    <input type="email" id="email" name="email"
+                    autocomplete="off" autocorrect="off"
+                    autocapitalize="none" required>
+                </dd>
+
+                <dt><label for="phone_number">phone number</label></dt>
+                <dd>
+                    <input type="tel" id="phone_number" name="phone number"
+                           placeholder="###-###-####" required>
+                </dd>
+
+                <dt><label for="phone_type">phone type</label></dt>
+                <dd>
+                    <select name="phone_type" id="phone_type">
+                        <option value="home">Home</option>
+                        <option value="business">Business</option>
+                        <option value="mobile">Mobile</option>
+                    </select>
+                </dd>
+                <dt><label for="message">Message</label></dt>
+                <dd>
+                    <textarea name="message" id="message" rows="6" cols="80"
+                              placeholder="Type your message here">
+                    </textarea>
+                </dd>
+            </dl>
+
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+</body>
+
+</html>

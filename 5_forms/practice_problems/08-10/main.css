@@ -1,0 +1,8 @@
+button {
+    display: block;
+    margin: 5px;
+}
+
+fieldset {
+    border: 0;
+}

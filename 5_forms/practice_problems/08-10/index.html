@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>your page title goes here</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <dl>
+                <dt><label for="movie">Movie</label></dt>
+                <dd>
+                    <select name="movie" id="movie" size="4">
+                        <option value="looper">Looper</option>
+                        <option value="frozen">Frozen</option>
+                        <option value="tommy boy">Tommy Boy</option>
+                        <option value="aliens" selected>Aliens</option>
+                    </select>
+                </dd>
+                <dt><label for="number">Rating</label></dt>
+                <dd><input type="number" value="1" min="1" max="5"></dd>
+            </dl>
+            <input type="checkbox" name="add_to_favorites" id="add_to_favorites">
+            <label for="add_to_favorites">Add to my favorites</label>
+            <button name="rating">Rate Movie</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
