@@ -1,0 +1,21 @@
+p::after {
+    content: '(' attr(href) ')';
+    color: red;
+}
+
+/* a::after {
+    content: ' (' attr(href) ')';
+    color: green;
+} */
+
+/* a::before {
+    content: '🔗'
+} */
+
+dt::after {
+    content: ':'
+}
+
+dd::before {
+    content: '🔗'
+}

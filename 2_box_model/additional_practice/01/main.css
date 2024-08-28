@@ -1,0 +1,14 @@
+.outline {
+    outline: solid;
+    background-color: yellow;
+}
+
+h2 {
+    border-bottom: 5px solid red;
+    display: inline;
+}
+
+img {
+    /* display: block;
+    display: inline-block; */
+}

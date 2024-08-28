@@ -1,0 +1,28 @@
+section {
+    outline: 1px solid black;
+    height: 500px;
+    /* box-sizing: border-box; */
+}
+
+.inner {
+    display: block;
+    box-sizing: border-box;
+    border: 3px solid red;
+    width: 30%;
+    margin-top:     0px;
+    margin-right:   auto;
+    margin-bottom:  0px;
+    margin-left:    auto;
+}
+
+.row {
+    display: inline-block;
+    outline: 4px solid blue;
+    /* vertical-align: middle; */
+margin-top: 100px;
+margin-bottom: auto;
+    /* padding-top: 50px; */
+    /* margin-bottom: 30px; */
+    /* padding-top: 50px; */
+    /* margin-top: 125px; */
+}
