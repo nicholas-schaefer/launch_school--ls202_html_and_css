@@ -1,0 +1,207 @@
+/* #region Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* #endregion Reset */
+
+body {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-areas:
+        "header header header"
+        "article1 article1 aside1"
+        "aside3 aside3 aside1"
+        "footer footer footer"
+    ;
+}
+
+@media screen and (min-width: 481px) {
+    .container {
+
+        grid-template-areas:
+            "header header header"
+            "aside1 article1 aside2"
+            "aside3 aside3 ."
+            "footer footer footer"
+        ;
+    }
+}
+
+.item {
+    display: grid;
+    outline: 1px solid black;
+    min-height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+
+.item1 {
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+.item2 {
+    background-color: yellow;
+    grid-area: aside1;
+}
+
+.item3 {
+    background-color: violet;
+    grid-area: article1;
+}
+
+.item4 {
+    background-color: tan;
+    grid-area: aside2;
+}
+
+.item5 {
+    background-color: lightblue;
+    grid-area: aside3;
+}
+
+.item6 {
+    background-color: lightcoral;
+    grid-area: footer;
+}
