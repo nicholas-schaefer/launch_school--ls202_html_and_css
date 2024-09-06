@@ -1,0 +1,162 @@
+@import url(whitespace-reset.css);
+
+/* #region mycss */
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffd505;
+}
+
+header[roll="page"], main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 25px 40px 25px;
+    box-sizing: border-box;
+}
+
+header[roll="page"] {
+    background-color: #047ec1;
+}
+
+main {
+    background-color: #ececec;
+    /* margin: 30px 40px 40px 40px; */
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+
+}
+
+article {
+    box-sizing: border-box;
+    background-color: aqua;
+    width: 200px;
+    height: 240px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 30px 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .3rem 0 .3rem;
+}
+
+figure {
+    background-color: red;
+    height: 140px;
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+
+img {
+    height: 100%;
+}
+
+ul p::before {
+    content: "$"
+}
+
+figure ~ * {
+    background-color: green;
+    padding-left: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+/* #endregion mycss */
+
+
+/* #region Modal */
+/* Inspired by this example: https://github.com/you-dont-need/You-Dont-Need-Javascript?tab=readme-ov-file#modalpopup */
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+	transition: opacity 200ms;
+  visibility: hidden;
+	opacity: 0;
+	&.light {
+    background: rgba(255,255,255,0.5);
+  }
+  .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.popup {
+	margin: 75px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #666;
+	width: 300px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	position: relative;
+  .light & {
+    border-color: #aaa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+  h2 {
+    margin-top: 0;
+    color: #666;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+  }
+  .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .content {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  p {
+    margin: 0 0 1em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+/* #endregion Modal */
